@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title> 210122 프로젝트 일기 </title>
+	</head>
+	<body>
+		<h1> 프로젝트 하면서 새로 알게된 내용🔍 </h1>
+		<ul>
+			<ol>
+				<li>웹 크롤링 할 때 F12 누르고 Copy -> div.table~~ / td.text~~ 이런 내용에서 "00.~~" 이런 형식 가능하다는 것 오늘 처음 알았음!</li>
+				-> 여쭤봤더니 이것은 그냥 Copy Selector 하고 나서의 결과라고 하셨다. ^^
+				<li>팀원분께서 작성한 코드를 분석해보다가 ActionChains 라는 기능 처음 알게됨!</li>
+				-> 찾아보니 ActionChians 기능을 사용하면 여러 개의 동작을 체인으로 묶어서 저장하고 실행 가능하다고 한다. (빠른손김참치 블로그 참고) 
+			</ol>
+				<h4>많이 쓰이는 기본 동작</h4>
+			<ol>
+			<li>element로 마우스 이동: ActionChains(driver).move_to_element(ref)</li>
+			<li>element로 마우스 클릭: ActionChains(driver).click(ref) </li> 
+			<li>element 키보드 입력 : ActionChains(driver).send_keys_to_element(ref,keys)</li> 
+			<li>키보드 입력: ActionChains(driver).send_keys(keys)</li>
+			</ol>
+				<li>위 네 가지 사항 중, 현재 프로젝트 내 한경컨센서스 제목 크롤링에서는 마우스 이동하면 뜨는 것을 수집하는 것이 필요하기 때문에 첫 번째 코드를 사용했다.</li>
+				
+		</ul>
+		<ul>
+			<h3>enumerate 함수</h3>
+			<li>text.split('\n'): 공백 (스페이스, 엔터, 탭 등) 기준으로 문자열을 나눈다 (출처: 위키독스 점프 투 파이썬) - enumerate(rows): "열거하다" 라는 뜻. 순서가 있는 자료형 (리스트, 튜플, 문자열) 입력받아 인덱스 값을 포함하는 enumerate 객체로 돌려줌</li>
+			<li>for _, row in ~~: 이런 코드를 사용하셨길래 _, 의 의미를 여쭤봤다! 아직 많은 코드를 보지는 못 했지만 이렇게 생긴 코드는 무슨 의미일지 검색해봐도 잘 나오지 않아서 여쭤보았다. (코딩 초보이자 물음표 살인마..) -> enumerate로 하면 return 이 2개가 됩니다. 첫번째 argument가 index인데 안쓸거라서 그냥 _ 이런식으로 표현해놓은 거에요 라고 답변 주셨다. enumerate 함수에 대해 조금 더 찾아봐야겠다.</li>
+		</ul>
+		<ul>
+			<h2>오늘의 교훈</h2> 
+			<li>다른 분들께서 작성하신 코드를 찬찬히 해석해보면서 모르는 것들을 하나씩 알아가는게 정말 재미있다!</li>
+			<li>그리고 지금 이렇게 작성하는 것도 깃허브에 함 올려보려고 하는 용도인데, 잘 올라갔으면 좋겠다!!! 파이팅!</li>
+			<li>+) 한 번 올려보고 txt 파일이 아니라 html 파일로 만들어서 올리는게 나을 것 같다고 판단. html도 독학 해야겠다 :)</li> 
+		</ul>
+	</body>
+</html>
